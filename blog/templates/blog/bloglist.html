@@ -1,0 +1,19 @@
+<html>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <head>
+        <title>BLOG LIST</title>
+    </head>
+    <body>        
+        <button onclick="addNew">ADD BLOG</button>
+        {% for blog in blogs %}
+            <div>
+                
+                <h1><a href="">{{ blog.title }}Title1</a></h1>
+                <p>{{ blog.text|linebreaksbr }}Namea tsrojdi</p>
+                
+            </div>
+        {% endfor %}
+
+    </body>
+</html>
